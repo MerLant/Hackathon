@@ -90,7 +90,7 @@ requires-dist = [
     { name = "djangorestframework", specifier = "==3.15.2" },
     { name = "drf-yasg", specifier = "==1.21.10" },
     { name = "fastapi", specifier = "==0.115.11" },
-    { name = "gunicorn", specifier = ">=23.0.0" },
+    { name = "gunicorn", specifier = "==23.0.0" },
     { name = "h11", specifier = "==0.14.0" },
     { name = "idna", specifier = "==3.10" },
     { name = "inflection", specifier = "==0.5.1" },
