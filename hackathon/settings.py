@@ -145,7 +145,7 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
 }
 
-METADATA_API_URL = "http://127.0.0.1:8001/upload/"
+METADATA_API_URL = os.getenv('METADATA_API_URL', "http://127.0.0.1:8001/upload/")
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_URLS_REGEX = r'^/api/.*$'
