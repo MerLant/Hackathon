@@ -21,8 +21,8 @@ class ImageViewSet(viewsets.ModelViewSet):
 
     # Добавляем поддержку поиска
     filter_backends = [DjangoFilterBackend, filters.SearchFilter]
-    filterset_fields = ['description']
-    search_fields = ['description']
+    filterset_fields = ['description', 'detected_objects', 'text']
+    search_fields = ['description', 'detected_objects', 'text']
 
     def perform_create(self, serializer):
         """При создании изображения получаем метаданные, записываем их в модель и обновляем EXIF изображения."""
