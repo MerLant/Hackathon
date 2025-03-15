@@ -5,7 +5,6 @@ from django.conf import settings
 from django_filters.rest_framework import DjangoFilterBackend
 from requests.exceptions import RequestException
 from rest_framework import status, viewsets, filters
-from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 
 from .models import Image as ImageModel
@@ -17,7 +16,6 @@ API_URL = settings.METADATA_API_URL
 class ImageViewSet(viewsets.ModelViewSet):
     queryset = ImageModel.objects.all().order_by("id")
     serializer_class = ImageSerializer
-    pagination_class = PageNumberPagination
 
     # Добавляем поддержку поиска
     filter_backends = [DjangoFilterBackend, filters.SearchFilter]
