@@ -33,11 +33,6 @@ uritemplate==4.1.1
 urllib3==2.3.0
 uvicorn==0.34.0
 python-multipart
-pillow
-transformers
-torch
-ultralytics
-sentencepiece
-sacremoses
-pytesseract
 piexif
+gunicorn==23.0.0
+django-filter>=25.1
